@@ -1,7 +1,7 @@
 # Peyman-Web  
 Personal Portfolio Website  
 
-[**Live Demo**](https://peymanmotamedifar.github.io/peyman-web/)  
+[**Visit My Website**](https://peymanmotamedifar.github.io/peyman-web/)  
 
 ---
 
