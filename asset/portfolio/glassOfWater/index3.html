@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(38, 38, 38);
+        }
+        .d1{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50% , -50%);
+            border: 8px solid white;
+            border-top: 2px solid rgba(255, 255, 255, 0.021);
+            border-radius: 15px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            background-image: url(water1.png);
+            background-repeat: repeat-x;
+            animation: anime1 10s linear infinite;
+
+        }
+        .d1::before{
+            content: '';
+            position: absolute;
+            right: -62px;
+            top: 30px;
+            width: 50px;
+            height: 50px;
+            border: 6px solid white;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+        }
+        @keyframes anime1 {
+            0%{
+                background-position: 0 120px;
+            }
+            10%{
+                background-position: 0 120px;
+            }
+            40%{
+                background-position: 1000px -20px;
+            }
+            80%{
+                background-position: 2000px -30px;
+            }
+            100%{
+                background-position: 2500px 120px;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="d1"></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #262626;
+    }
+    section{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+    }
+    .d1{
+        width: 300px;
+        height: 300px;
+        border: 25px solid red;
+        border-radius: 50%;
+        transform: translateX(100px);
+        transition: 3s;
+    }
+    .d2{
+        width: 300px;
+        height: 300px;
+        border: 25px solid rgb(26, 45, 255);
+        border-radius: 50%;
+        transform: rotateX(5deg);
+        transition: 3s;
+    }
+    .d3{
+        width: 300px;
+        height: 300px;
+        border: 25px solid red;
+        border-radius: 50%;
+        transform: translateX(-100px);
+        transition: 3s;
+    }
+    section:hover .d1{
+        transform:translate(100px,100px);
+    }
+    section:hover .d2{
+        transform:rotateX(170deg);
+    }
+    section:hover .d3{
+        transform:translate(-100px,-100px);
+    }
+    
+    
+</style>
+<body>
+    <section>
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section{
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div{
+        margin-top: 100px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+    }
+    div:hover>img:nth-of-type(1){
+        transform: rotateY(5000deg);
+    }
+    div:hover>img:nth-of-type(2){
+        transform: rotateY(5090deg);
+    }
+    img{
+      transition: 40s;
+    }
+    div>img:nth-of-type(1){
+         position: absolute;
+        top: 0;left: 0;
+        transform: rotateY(0deg);
+    }
+    div>img:nth-of-type(2){
+        position: absolute;
+        top: 0;left:0px;
+        transform: rotateY(90deg);
+        /* border: 2px solid black; */
+    }
+
+</style>
+<body>
+    <section>
+        <div>
+            <img src="Pngtrered heart icon isolated504515-1.png" alt=""> 
+            <img src="Pngtrered heart icon isolated504515-2.png" alt=""> 
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.31690426.css",
+    "main.js": "/static/js/main.95f7c664.js",
+    "static/media/pey2.png": "/static/media/pey2.fc12544e3577f3b53032.png",
+    "static/media/amalie-steiness.gif": "/static/media/amalie-steiness.34970db13a0575566878.gif",
+    "index.html": "/index.html",
+    "main.31690426.css.map": "/static/css/main.31690426.css.map",
+    "main.95f7c664.js.map": "/static/js/main.95f7c664.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31690426.css",
+    "static/js/main.95f7c664.js"
+  ]
+}

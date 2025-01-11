@@ -1,0 +1,606 @@
+
+    
+    /*** start section one -- header***/
+
+    .header{
+        width: 100%;
+        height: 115px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .headerDiv{
+        width: 85%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+    }
+    .logo{
+        width: 135px;
+        height: 100%;
+        z-index: 2;
+    }
+    .logo>a>div{
+        width: 100%;
+        height: 135px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border: 1px solid rgba(128, 128, 128, 0.25);
+    }
+    .logo>img{
+        width: 110px;
+        height: 83px;
+
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+    .menu>ul:nth-of-type(1){
+        margin-left: 20px;
+        align-items: flex-end;
+
+    }
+    .menu>ul:nth-of-type(1)>li{
+        margin: 0 3px;
+        width: 98px;
+        height: 80%;
+        /* border: 1px solid white; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu>ul:nth-of-type(1)>li>img{
+        height: 55px;
+        width: 100%;
+    }
+    .menu>ul:nth-of-type(1)>li>span{
+        margin: -16PX 0 20PX 0;
+    }
+    .menu>ul:nth-of-type(2){
+        /* margin-right: 5px; */
+        align-items: flex-end;
+    }
+    .menu>ul:nth-of-type(2)>li{
+        margin: 0 5px;
+        width: 70px;
+        height: 75%;
+        /* border: 1px solid white; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu>ul:nth-of-type(2)>li:nth-of-type(3){
+        width: 120px;
+    }
+    .menu>div{
+        border-left: 1px solid black;
+    }
+    .menu>ul:nth-of-type(2)>li:last-child>div:first-child{
+        border-left: 2px solid black;
+        /* outline: 2px solid black; */
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 15px;
+        /* background-color: blue; */
+    }
+    
+    .subMenu{
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 115px;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        border-top: 2px solid gray;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+    .menu>ul>li:hover>.subMenu{
+        opacity: 1;
+        visibility: visible;
+    }
+    .subMenu>li{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .subMenu>li>div{
+        width: 85%;
+        height: 100%;
+        display: flex;
+        /* background-color: rgb(113, 113, 113); */
+    }
+
+    .subMenu>li>div>div:nth-of-type(1){
+        width: 50%;
+        background-color: rgb(255, 255, 255);
+        margin: 0 2px;
+    }
+    .subMenu>li>div>div:nth-of-type(1)>div{
+        display: flex;
+        justify-content: center;
+        /* border: 2px solid blue; */
+    }
+    .subMenu>li>div>div:nth-of-type(1)>div>img{
+        width: 100%;
+    }
+    .subMenu>li>div>div:nth-of-type(2){
+        width: 25%;
+        background-color: rgb(255, 255, 255);
+        margin: 0 2px;
+    }
+    .subMenu>li>div>div:nth-of-type(3){
+        width: 25%;
+        background-color: rgb(255, 255, 255);
+        margin: 0 2px;
+    }
+    .subMenu2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 50%;
+        /* align-items: flex-start; */
+    }
+    .subMenu2>div:nth-of-type(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .subMenu2>div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid gray;
+    }
+    .subMenu2>div:nth-of-type(1)>section{
+     height: 30px;
+     border-right: 1px solid gray
+    }
+    .subMenu2>div:nth-of-type(1)>div:nth-of-type(1){
+        font-size: 45px;
+        margin-right: 10px
+    }
+    .subMenu2>div:nth-of-type(1)>div:nth-of-type(2){
+       display: flex;
+       margin-left: 10px;
+       
+    }
+    .subMenu2>div>a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .subMenu2>div>a:hover{
+        color: red;
+    }
+
+    .subMenu3>div{
+        margin-top: 80px;
+    }
+    .subMenu3>div>a>div{
+        border: 1px solid black;
+        margin: 15px 0;
+        height: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        transition: 0.4s;
+    }
+   
+    .subMenu3>div>a:hover>div{
+        background-color: black; 
+        color: white;
+    }
+
+    /*** end of section one -- header** */
+
+
+    /*** :start section two -- down header***/
+
+    .section2{
+        width: 100%;
+        height: 590px;
+        background-image: url(../img/porsche-normal.jpg);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+    .section2>div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .section2>div>a{
+        margin: 0 0 60px 120px;
+        color: white;
+        transition: 0.5s;
+    }
+    .section2>div>a:hover{
+        color: red;
+    }
+    .section2>div>a>h2{
+        font-size: 55px;
+    }
+    .section2>div>a>p{
+        font-size: 28px;
+    }
+    
+    /*** end of section two -- down header ***/
+
+
+
+    /*** start section three, five, seven -- models gap, shopping tools, porsche social***/
+
+    .section3,.section5, .section7{
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        
+    }
+    .section3>span,.section5>span,.section7>span{
+        color: black;
+        font-size: 42px;
+        font-weight: 700;
+        margin-left: 140px;
+    }
+
+    /*** end of section three, five, seven -- models gap, shopping tools, porsche social***/
+
+
+     /*** start section four -- porsche models***/
+
+
+    .section4{
+        width: 100%;
+        /* height: 100vh; */
+    }
+    .section4Div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* .section4>div{
+        display: flex;
+        flex-wrap: wrap;
+    } */
+    .section4>div>div:nth-of-type(1){
+        width: 506px;
+        height: 380px;
+        border: 1px solid black;
+        background-image: url(../img/porsche-small.jpg);
+        background-size: 100% auto;
+    }
+    .section4>div>div:nth-of-type(2){
+        width: 506px;
+        height: 380px;
+        border: 1px solid black;
+        background-image: url(../img/porsche-small\ \(2\).jpg);
+        background-size: 100% auto;
+    }
+    .section4>div>div:nth-of-type(3){
+        width: 506px;
+        height: 380px;
+        border: 1px solid black;
+        background-image: url(../img/porsche-small\ \(3\).jpg);
+        background-size: 100% auto;
+    }
+    .section4>div>div:nth-of-type(4){
+        width: 506px;
+        height: 380px;
+        border: 1px solid black;
+        background-image: url(../img/porsche-small\ \(4\).jpg);
+        background-size: 100% auto;
+    }
+    .section4>div>div:nth-of-type(5){
+        width: 506px;
+        height: 380px;
+        border: 1px solid black;
+        background-image: url(../img/porsche-small\ \(1\).jpg);
+        background-size: 100% auto;
+    }
+    .section4>div>div:nth-of-type(6){
+        width: 506px;
+        height: 380px;
+        border: 1px solid black;
+        background-image: url(../img/porsche-small\ \(5\).jpg);
+        background-size: 100% auto;
+    }
+    .section4Div>div{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .section4Div>div>div:nth-of-type(1){
+        width: 100%;
+        font-size: 34px;
+        font-weight: 700;
+        color: white;
+        padding-left: 40px;
+        margin-top: 15px;
+
+    } 
+    .section4Div>div>div:nth-of-type(2)>div:nth-of-type(2)>a{
+        color: white;
+        transition: 0.4;
+    }
+    .section4Div>div>div:nth-of-type(2)>div:nth-of-type(1)>a{
+        transition: 0.4;
+    }
+    
+    .section4Div>div>div:nth-of-type(2)>div>a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .section4Div>div>div:nth-of-type(2)>div:nth-of-type(1){
+        margin: 0 8px;
+        width: 145px;
+        height: 45px;
+        background-color: rgb(245, 245, 245);
+    }
+    .section4Div>div>div:nth-of-type(2)>div:nth-of-type(2){
+        border: 1px solid white;
+        margin: 0 8px;
+        width: 130px;
+        height: 45px;
+    }
+    .section4Div>div>div:nth-of-type(2)>div:nth-of-type(2):hover{
+         border-color: red;
+    }
+    .section4Div>div>div:nth-of-type(2)>div:nth-of-type(2)>a:hover{
+        color: red;
+      
+    }
+    .section4Div>div>div:nth-of-type(2)>div:nth-of-type(1)>a:hover{
+        color: rgb(255, 255, 255);
+        background-color: red;
+    }
+    .section4Div>div>div:nth-of-type(2){
+        display: flex;
+        margin: 0 0px 30px 40px;
+    }
+     /*** end of section four -- porsche models***/
+
+
+      /*** start section six -- shopping tools***/
+    .section6{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .section6Div{
+        width: 85%;
+        display: flex;
+        height: 293px;
+    }
+    .section6Div>div:nth-of-type(1){
+        display: flex;
+        width: 40%;
+        background-image: url(../img/porsche-normal-1.jpg);
+        background-position: center;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+    .section6Div>div:nth-of-type(2){
+        display: flex;
+        width: 20%;
+        background-image: url(../img/porsche-normal-2.jpg);
+        /* background-size: 100% auto; */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .section6Div>div:nth-of-type(3){
+        display: flex;
+        width: 20%;
+        background-image: url(../img/porsche-normal-3.jpg);
+        /* background-size: 100% auto; */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .section6Div>div:nth-of-type(4){
+        display: flex;
+        width: 20%;
+        background-image: url(../img/porsche-normal-4.jpg);
+        /* background-size: 100% auto; */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .section6Div>div>a{
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-size: 25px;
+        display: flex;
+        align-items: flex-end;
+        padding-left: 15px;
+        padding-bottom: 10px;
+    }
+    .section6Div>div>a:hover{
+        color: red;
+    }
+
+    /*** end of section six ***/
+
+
+     /*** start section eight -- Porsche Social***/
+
+    .section8{
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+    }
+    .section8>div{
+        width:85%;
+        height: 100%;
+        display: grid;
+        gap: 3px;
+        grid-template-columns: repeat(6, 1fr);
+        /* grid-template-rows: repeat(3,1fr); */
+        grid-auto-rows: 200px;
+       
+    }
+    .section8>div>div>a>img{
+         border: 1px solid white;
+        border-radius: 3px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+       
+    }
+    .section8>div>div>a>img:hover{
+        opacity: 0.8;
+    }
+    .section8>div>div:nth-of-type(1){
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+    }
+    .section8>div>div:nth-of-type(2){
+        grid-column-start: 3;
+        grid-column-end: span 1;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+    .section8>div>div:nth-of-type(3){
+        grid-column-start: 4;
+        grid-column-end: span 1;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+    .section8>div>div:nth-of-type(4){
+        grid-column-start: 5;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+    }
+    .section8>div>div:nth-of-type(5){
+        grid-column-start: 1;
+        grid-column-end: span 1;
+        grid-row-start: 3;
+        grid-row-end: span 1;
+    }
+    .section8>div>div:nth-of-type(6){
+        grid-column-start: 2;
+        grid-column-end: span 1;
+        grid-row-start: 3;
+        grid-row-end: span 1;
+    }
+    .section8>div>div:nth-of-type(7){
+        grid-column-start: 3;
+        grid-column-end: span 2;
+        grid-row-start: 2;
+        grid-row-end: span 2;
+    }
+    .section8>div>div:nth-of-type(8){
+        grid-column-start: 5;
+        grid-column-end: span 1;
+        grid-row-start: 3;
+        grid-row-end: span 1;
+    }
+    .section8>div>div:nth-of-type(9){
+        grid-column-start: 6;
+        grid-column-end: span 1;
+        grid-row-start: 3;
+        grid-row-end: span 1;
+    }
+
+       /*** end of section eight -- Porsche Social***/
+
+
+
+       /*** start section nine -- footer ***/
+
+    .section9{
+        width: 100%;
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .foot{
+        border-top: 1px solid rgba(128, 128, 128, 0.771);
+        width: 85%;
+        height: 100%;
+        display: flex;
+      
+    }
+    .foot>div{
+        width: 25%;
+        height: 300px;
+    }
+    .foot>div>span{
+        display: block;
+        width: 100%;
+        height: 30px;
+        /* background-color: aqua; */
+        margin: 20px 0;
+    }
+    .foot>div>h3{
+        margin-top: 20px;
+        width: 100%;
+        font-size: 22px;
+    }
+    #social{
+        width: 100%;
+        height: 70px;
+        background-color: black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #social>a{
+        margin: 0 15px;
+        color: white;
+        font-size: 18px;
+    }
+    #social>a:nth-of-type(1):hover{
+        color: violet;
+    }
+    #social>a:nth-of-type(2):hover{
+        color: rgb(39, 118, 255);
+    }
+    #social>a:nth-of-type(3):hover{
+        color: red;
+    }
+    .foot>div>span>a:hover{
+        color: red;
+    }
+
+     /*** end of section nine -- footer***/
+     .guide{
+        width: 100%;
+        height: 200px ;
+        background-color: rgb(73, 73, 73);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .guide>h1>a{
+        color: white;
+        font-size: 40px;
+        
+     }

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        
+    }
+    section{
+        width: 610px;
+        height: 755px;
+        /* min-height: 100vh; */
+        position: relative;
+        background-color: rgb(0, 0, 0);
+        overflow: hidden;
+    }
+    div{
+        position: absolute;
+       
+        transform: rotate3d(1,1,1,90deg)
+    }
+    section:hover>div{
+        transform: rotate3d(1,1,1,3600deg);
+        transition-property: transform ,right,top;
+        transition-duration: 15s,16s,16.2s;
+        transition-delay: 0,1s,1s;
+        transition-timing-function: ease-out;
+
+    }
+    section:hover>div:nth-of-type(1){
+        right: 15%;
+        top: 30%;
+    }
+    section:hover>div:nth-of-type(2){
+        right: 15%;
+        top: 20%;
+    }
+    section:hover>div:nth-of-type(3){
+        right: 25%;
+        top: 37%;
+    }
+    section:hover>div:nth-of-type(4){
+        right: 25%;
+        top: 30%;
+    }
+    section:hover>div:nth-of-type(5){
+        right: 25.1%;
+        top: 46%;
+    }
+    section:hover>div:nth-of-type(6){
+        right: 47%;
+        top: 20%;
+    }
+    section:hover>div:nth-of-type(7){
+        right: 47%;
+        top: 25%;
+    }
+    section:hover>div:nth-of-type(8){
+        right: 47%;
+        top: 31%;
+    }
+    section:hover>div:nth-of-type(9){
+        right: 36%;
+        top: 30%;
+    }
+    section:hover>div:nth-of-type(10){
+        right: 68%;
+        top: 25%;
+    }
+    section:hover>div:nth-of-type(11){
+        right: 68%;
+        top: 20%;
+    }
+    section:hover>div:nth-of-type(12){
+        right: 79%;
+        top: 20%;
+    }
+    section:hover>div:nth-of-type(13){
+        right: 15%;
+        top: 65%;
+    }
+    section:hover>div:nth-of-type(14){
+        right: 15%;
+        top: 56%;
+        transition: 17s;
+    }
+    section:hover>div:nth-of-type(15){
+        right: 15%;
+        top: 76%;
+    }
+    section:hover>div:nth-of-type(16){
+        right: 27%;
+        top: 56%;
+    }
+    section:hover>div:nth-of-type(17){
+        right: 36%;
+        top: 56%;
+        transition: 18s;
+    }
+    section:hover>div:nth-of-type(18){
+        right: 27%;
+        top: 66%;
+        
+    }
+    section:hover>div:nth-of-type(19){
+        right: 46.5%;
+        top: 60.1%;
+    }
+    section:hover>div:nth-of-type(20){
+        right: 46.5%;
+        top: 56%;
+    }
+    section:hover>div:nth-of-type(21){
+        right: 53%;
+        top: 66%;
+    }
+    section:hover>div:nth-of-type(22){
+        right: 47%;
+        top: 46%;
+    }
+    section:hover>div:nth-of-type(23){
+        right: 47%;
+        top: 38%;
+    }
+    section:hover>div:nth-of-type(24){
+        right: 67.8%;
+        top: 51.1%;
+    }
+    section:hover>div:nth-of-type(25){
+        right: 74.2%;
+        top: 66%;
+    }
+    section:hover>div:nth-of-type(26){
+        right: 78.9%;
+        top: 71%;
+    }
+    section:hover>div:nth-of-type(27){
+        right: 33.4%;
+        top: 76.1%;
+    }
+   
+    .azadi{
+        background-color: rgb(21, 168, 21);
+    }
+    .d1{
+        width: 40px;
+        height: 160px;
+        right: 60%;
+        top: 70%;
+        border-radius: 10px;
+    }
+    .d6{
+        width: 170px;
+        height: 40px;
+        right: 65%;
+        top: 20%;
+        border-radius: 10px;
+    }
+    .d2{
+        width: 40px;
+        height: 80px;
+        right: 55%;
+        top: 47%;
+        border-radius: 10px 10px 0 0;
+    }
+    .d7{
+        width: 40px;
+        height: 40px;
+        right: 72%;
+        top: 10%;
+        border-radius: 10px;
+    }
+    .d8{
+        width: 110px;
+        height: 40px;
+        right: 15%;
+        top: 46%;
+        border-radius: 10px 0 10px 10px;
+    }
+    .d3{
+        width: 100px;
+        height: 40px;
+        right: 37%;
+        top: 40%;
+        border-radius: 10px 10px 0 10px;
+    }
+    .d9{
+        width: 40px;
+        height: 50px;
+        right: 67%;
+        top: 45%;
+    }
+    .d11{
+        width: 100px;
+        height: 40px;
+        right: 67%;
+        top: 71%;
+        border-radius: 10px 0 10px 10px;
+    }
+    .d4{
+        width: 40px;
+        height: 100px;
+        right: 46%;
+        top: 40%;
+        border-radius: 10px;
+    }
+    
+    .d5{
+        width: 40px;
+        height: 82px;
+        right: 38%;
+        top: 35%;
+        border-radius: 0 0 10px 10px;
+    }
+    
+    .d12{
+        width: 68px;
+        height: 40px;
+        right: 18%;
+        top: 60%;
+        border-radius: 0 10px 0 0;
+    }
+    
+    .d13{
+        width: 40px;
+        height: 310px;
+        right: 30%;
+        top: 50%;
+        border-radius: 10px 0 10px 10px;
+    }
+    /* ******* */
+    .zan{
+        background-color: red;
+    }
+    .d20{
+        width: 40px;
+        height: 85px;
+        right: 25%;
+        top: 25%;
+        border-radius: 10px 10px 0 0;
+    }
+    .d22{
+        width: 40px;
+        height: 40px;
+        right: 55%;
+        top: 66%;
+        border-radius: 10px;
+    }
+    .d23{
+        width: 80px;
+        height: 40px;
+        right: 75%;
+        top: 36%;
+        border-radius: 10px 0 10px 10px;
+    }
+    .d21{
+        width: 40px;
+        height: 80px;
+        right: 47%;
+        top: 26%;
+        border-radius: 10px 10px 0 0; 
+    }
+    .d24{
+        width: 40px;
+        height: 40px;
+        right: 66%;
+        top: 10%;
+        border-radius: 10px;
+    }
+    .d25{
+        width: 120px;
+        height: 40px;
+        right: 75%;
+        top: 21%;
+        border-radius: 0 0 10px 0;
+    }
+    /* ******* */
+    .zendegi{
+        background-color: rgb(255, 255, 255);
+    }
+    .d30{
+        width: 40px;
+        height: 85px;
+        right: 12.5%;
+        top: 70.1%;
+    }
+    .d33{
+        width: 100px;
+        height: 40px;
+        right: 32.5%;
+        top: 41%;
+        border-radius: 10px 10px 0 10px;
+    }
+    .d34{
+        width: 60px;
+        height: 40px;
+        right: 21%;
+        top: 44%;
+        border-radius: 10px 0 0 10px;
+    }
+    .d31{
+        width: 167px;
+        height: 40px;
+        right: 50%;
+        top: 18%;
+        border-radius: 10px 10px 10px 0;
+    }
+    .d35{
+        width: 167px;
+        height: 40px;
+        right: 60%;
+        top: 10%;
+        border-radius: 10px;
+    }
+    .d36{
+        width: 40px;
+        height: 153px;
+        right: 50%;
+        top: 5%;
+        border-radius: 0 0 10px 0;
+    }
+    .d32{
+        width: 69px;
+        height: 40px;
+        right: 54.2%;
+        top: 16%;
+        border-radius: 10px 0 0 0;
+    }
+    .d37{
+        width: 40px;
+        height: 78px;
+        right: 38.9%;
+        top: 41%;
+        border-radius: 0 0 0 10px;
+    }
+    .d38{
+        width: 280px;
+        height: 40px;
+        right: 20.4%;
+        top: 12%;
+        border-radius: 0 10px 10px 0;
+    }
+
+    
+</style>
+<body>
+    <section>
+    <div class="azadi d1"></div>
+    <div class="azadi d6"></div>
+    <div class="azadi d2"></div>
+    <div class="azadi d7"></div>
+    <div class="azadi d8"></div>
+    <div class="azadi d3"></div>
+    <div class="azadi d9"></div>
+    <div class="azadi d11"></div>
+    <div class="azadi d4"></div>
+    <div class="azadi d5"></div>
+    <div class="azadi d12"></div>
+    <div class="azadi d13"></div>
+
+
+
+    <div class="zan d20"></div>
+    <div class="zan d22"></div>
+    <div class="zan d23"></div>
+    <div class="zan d21"></div>
+    <div class="zan d24"></div>
+    <div class="zan d25"></div>
+
+
+
+    <div class="zendegi d30"></div>
+    <div class="zendegi d33"></div>
+    <div class="zendegi d34"></div>
+
+
+
+    <div class="zendegi d31"></div>
+    <div class="zendegi d35"></div>
+    <div class="zendegi d36"></div>
+
+
+
+
+    <div class="zendegi d32"></div>
+    <div class="zendegi d37"></div>
+    <div class="zendegi d38"></div>
+</section>
+</body>
+</html>
